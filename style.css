@@ -1,0 +1,571 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-bottom: 50px;
+  font-family: "Zen Maru Gothic", serif;
+  font-size: 20px;
+  background-color: #ffffff;
+}
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+h1 {
+  font-size: 30px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+/* 01 */
+div.title-01 {
+  position: relative;
+  padding: 12px 16px;
+}
+div.title-01::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 200px;
+  height: 30px;
+  transform: rotate(180deg) translateX(50%);
+  border: 2px solid;
+  border-bottom: none;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+div.title-01::after {
+  content: "";
+  position: absolute;
+  top: 62px;
+  left: 90px;
+  width: 30px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+
+
+/* 02 */
+div.title-02 {
+  position: relative;
+  padding: 12px 16px;
+  border-bottom: 2px solid #333333;
+}
+div.title-02::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  width: 30px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+
+
+/* 03 */
+div.title-03 {
+  position: relative;
+  padding: 12px 16px;
+  border-bottom: 2px solid #333333;
+  background-color: #ffffff;
+}
+div.title-03::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 90px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  background-color: #ffffff;
+}
+div.title-03::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 90px;
+  z-index: -1;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  border: 2px solid;
+  border-color: #333333 #333333 transparent transparent;
+  background-color: #ffffff;
+}
+
+
+/* 04 */
+div.title-04 {
+  position: relative;
+  padding: 12px 16px;
+  border-bottom: 2px solid #333333;
+  background-color: #ffffff;
+}
+div.title-04::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 90px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  background-color: #ffffff;
+}
+div.title-04::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 94px;
+  z-index: -1;
+  width: 30px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+
+
+/* 05 */
+div.title-05 {
+  position: relative;
+  padding: 12px 16px;
+  border-bottom: 2px solid #333333;
+}
+div.title-05::before {
+  content: "";
+  position: absolute;
+  right: -24px;
+  bottom: -14px;
+  z-index: -1;
+  width: 30px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+div.title-05::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  bottom: -30px;
+  z-index: -1;
+  width: 6px;
+  height: 6px;
+  transform: rotate(50deg);
+  border-radius: 50%;
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+
+
+/* 06 */
+div.title-06 {
+  position: relative;
+  padding: 12px 16px;
+  border: 2px solid #333333;
+  border-radius: 4px;
+}
+div.title-06::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 90px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  background-color: #ffffff;
+}
+div.title-06::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 90px;
+  z-index: -1;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  border: 2px solid;
+  border-color: #333333 #333333 transparent transparent;
+  background-color: #ffffff;
+}
+
+
+/* 07 */
+div.title-07 {
+  position: relative;
+  padding: 12px 16px;
+  border: 2px solid #333333;
+}
+div.title-07::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  width: 30px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+
+
+/* 08 */
+div.title-08 {
+  position: relative;
+  padding: 12px 16px;
+  border: 2px solid #333333;
+  background-color: #ffffff;
+}
+div.title-08::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333333;
+  background-color: #ffffff;
+}
+div.title-08::after {
+  content: "";
+  position: absolute;
+  top: 68px;
+  left: 50%;
+  z-index: -1;
+  width: 30px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+
+
+/* 09 */
+div.title-09 {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+div.title-09::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 60px;
+  width: 26px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+
+
+/* 10 */
+div.title-10 {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+div.title-10::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 70px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  background-color: #ffffff;
+}
+div.title-10::after {
+  content: "";
+  position: absolute;
+  top: 106%;
+  left: 68px;
+  width: 20px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+
+
+/* 11 */
+div.title-11 {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+div.title-11::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 68px;
+  width: 26px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+div.title-11 > p {
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+div.title-11 > span {
+  position: absolute;
+  top: -30%;
+  left: -25%;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 60%;
+  height: 60%;
+  font-size: 16px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+div.title-11 > span::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 70px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  background-color: #ffffff;
+}
+
+
+/* 12 */
+div.title-12 {
+  position: relative;
+  padding: 12px 16px;
+}
+div.title-12::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 30px;
+  height: 2px;
+  transform: rotate(60deg);
+  background-color: #333333;
+}
+div.title-12::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 30px;
+  height: 2px;
+  transform: rotate(-60deg);
+  background-color: #333333;
+}
+
+
+/* 13 */
+div.title-13 {
+  position: relative;
+  padding: 12px 16px 12px 30px;
+}
+div.title-13::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 100px;
+  height: 1px;
+  transform: rotate(-14deg);
+  background-color: #333333;
+}
+div.title-13::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  width: 120px;
+  height: 1px;
+  transform: rotate(14deg);
+  background-color: #333333;
+}
+div.title-13 > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+div.title-13 > span::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 160px;
+  height: 1px;
+  transform: rotate(-12deg);
+  background-color: #333333;
+}
+div.title-13 > span::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 160px;
+  height: 1px;
+  transform: rotate(12deg);
+  background-color: #333333;
+}
+
+
+/* 02-01 */
+div.title-02-01 {
+  position: relative;
+  padding: 12px 20px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #333333;
+}
+div.title-02-01::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: -1;
+  width: 20px;
+  height: 12px;
+  transform: translateX(-50%);
+  background-color: #333333;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+
+/* 02-02 */
+div.title-02-02 {
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 150px;
+  color: #ffffff;
+  border-radius: 100% 100% 0 100%;
+  background-color: #333333;
+}
+
+
+/* 02-03 */
+div.title-02-03 {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+div.title-02-03::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 70px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  background-color: #ffffff;
+}
+div.title-02-03::after {
+  content: "";
+  position: absolute;
+  top: 108%;
+  left: 68px;
+  width: 20px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+div.title-02-03 > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateX(3px) translateY(3px);
+  border-radius: 50%;
+  background-color: hotpink;
+  mix-blend-mode: multiply;
+}
+
+
+/* 02-04 */
+div.title-02-04 {
+  position: relative;
+}
+div.title-02-04 > p {
+  position: relative;
+  padding: 12px 16px;
+  border-radius: 4px;
+  background-color: #fff3d1;
+}
+div.title-02-04 > p::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 90px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  background-color: #fff3d1;
+}
+div.title-02-04 > span {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+div.title-02-04 > span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 36px;
+  height: 16px;
+  transform: rotate(-45deg);
+  background-color: #ff57b1;
+  mix-blend-mode: multiply;
+}
+div.title-02-04 > span::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  right: -10px;
+  width: 36px;
+  height: 16px;
+  transform: rotate(-45deg);
+  background-color: #64d1ff;
+  mix-blend-mode: multiply;
+}
