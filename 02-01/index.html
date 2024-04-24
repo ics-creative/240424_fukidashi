@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CSS表現デモ</title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
   <link href="../base.css" rel="stylesheet" type="text/css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+  <style>
+    .fukidashi-02-01 {
+      position: relative;
+      width: fit-content;
+      padding: 12px 20px;
+      color: #ffffff;
+      border-radius: 10px;
+      background-color: #333333;
+    }
+    .fukidashi-02-01::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      z-index: -1;
+      width: 20px;
+      height: 12px;
+      transform: translateX(-50%);
+      box-sizing: border-box;
+      background-color: #333333;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+    }
+  </style>
 </head>
 
 <body>
