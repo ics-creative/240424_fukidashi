@@ -1,0 +1,42 @@
+/* 02-03 */
+.fukidashi-02-03 {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+.fukidashi-02-03::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 70px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.fukidashi-02-03::after {
+  content: "";
+  position: absolute;
+  top: 108%;
+  left: 68px;
+  width: 20px;
+  height: 2px;
+  transform: rotate(50deg);
+  box-sizing: border-box;
+  background-color: #333333;
+}
+.fukidashi-02-03 > .ornament {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateX(3px) translateY(3px); /* 位置をややズラす */
+  border-radius: 50%;
+  background-color: hotpink;
+  pointer-events: none; /* クリック不可にする（下のテキストに触れるように） */
+  mix-blend-mode: multiply; /* 乗算 */
+}
