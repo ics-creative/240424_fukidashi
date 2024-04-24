@@ -4,27 +4,27 @@ body {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   font-family: "Zen Maru Gothic", serif;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #ffffff;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+  place-items: center;
+  gap: 80px;
 }
 h1 {
-  font-size: 30px;
   padding-top: 80px;
   padding-bottom: 20px;
+  font-size: 30px;
 }
 
 /* 01-01 */
 .fukidashi-01-01 {
   position: relative;
+  width: fit-content;
   padding: 12px 16px;
 }
 .fukidashi-01-01::before {
@@ -33,30 +33,34 @@ h1 {
   top: 30px;
   left: 50%;
   width: 100%;
-  height: 30px;
-  transform: rotate(180deg) translateX(50%);
+  height: 50%;
+  box-sizing: border-box;
   border: 2px solid;
-  border-bottom: none;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top: none;
+  border-bottom-right-radius: 50px; /* 左下の角丸 */
+  border-bottom-left-radius: 50px; /* 右下の角丸 */
+  rotate: 0;
+  translate: -50%;
 }
 .fukidashi-01-01::after {
   content: "";
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 8px); /* フキダシのサイズに応じて調整してください */
   left: 50%;
   width: 30px;
   height: 2px;
-  rotate: 50deg;
-  translate: -50%;
+  box-sizing: border-box;
   background-color: #333333;
   box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+  rotate: 50deg;
+  translate: -50%;
 }
 
 
 /* 01-02 */
 .fukidashi-01-02 {
   position: relative;
+  width: fit-content;
   padding: 12px 16px;
   border-bottom: 2px solid #333333;
 }
@@ -67,16 +71,18 @@ h1 {
   left: 50%;
   width: 30px;
   height: 2px;
-  rotate: 50deg;
-  translate: -25%;
+  box-sizing: border-box;
   background-color: #333333;
   box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+  rotate: 50deg;
+  translate: -25%;
 }
 
 
 /* 01-03 */
 .fukidashi-01-03 {
   position: relative;
+  width: fit-content;
   padding: 12px 16px;
   border-bottom: 2px solid #333333;
   background-color: #ffffff;
@@ -88,9 +94,10 @@ h1 {
   left: 50%;
   width: 15px;
   height: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* 背景色と同じ色を指定 */
   rotate: 135deg;
   translate: -50%;
-  background-color: #ffffff;
 }
 .fukidashi-01-03::after {
   content: "";
@@ -100,17 +107,19 @@ h1 {
   z-index: -1;
   width: 15px;
   height: 15px;
-  rotate: 135deg;
-  translate: -50%;
+  box-sizing: border-box;
   border: 2px solid;
   border-color: #333333 #333333 transparent transparent;
   background-color: #ffffff;
+  rotate: 135deg;
+  translate: -50%;
 }
 
 
 /* 01-04 */
 .fukidashi-01-04 {
   position: relative;
+  width: fit-content;
   padding: 12px 16px;
   border-bottom: 2px solid #333333;
   background-color: #ffffff;
@@ -122,27 +131,30 @@ h1 {
   left: 50%;
   width: 15px;
   height: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* 背景色と同じ色を指定 */
   rotate: 135deg;
   translate: -50%;
-  background-color: #ffffff;
 }
 .fukidashi-01-04::after {
   content: "";
   position: absolute;
-  top: 60px;
+  top: calc(100% + 5px);
   left: calc(50% - 4px);
   z-index: -1;
   width: 30px;
   height: 2px;
   transform: rotate(50deg);
+  box-sizing: border-box;
   background-color: #333333;
-  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; /* 背景色と同じ色を指定 */
 }
 
 
 /* 01-05 */
 .fukidashi-01-05 {
   position: relative;
+  width: fit-content;
   padding: 12px 16px;
   border-bottom: 2px solid #333333;
 }
@@ -154,6 +166,7 @@ h1 {
   width: 30px;
   height: 2px;
   transform: rotate(50deg);
+  box-sizing: border-box;
   background-color: #333333;
 }
 .fukidashi-01-05::after {
@@ -163,15 +176,17 @@ h1 {
   bottom: -28px;
   width: 8px;
   height: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff; /* 背景色と同じ色を指定 */
   border-radius: 50%;
   background-color: #333333;
-  border: 1px solid #fff;
 }
 
 
 /* 01-06 */
 .fukidashi-01-06 {
   position: relative;
+  width: fit-content;
   padding: 12px 16px;
   border: 2px solid #333333;
   border-radius: 4px;
@@ -183,9 +198,10 @@ h1 {
   left: 50%;
   width: 15px;
   height: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* 背景色と同じ色を指定 */
   rotate: 135deg;
   translate: -50%;
-  background-color: #ffffff;
 }
 .fukidashi-01-06::after {
   content: "";
@@ -194,35 +210,39 @@ h1 {
   left: 50%;
   width: 15px;
   height: 15px;
-  rotate: 135deg;
-  translate: -50%;
+  box-sizing: border-box;
   border: 2px solid;
   border-color: #333333 #333333 transparent transparent;
+  rotate: 135deg;
+  translate: -50%;
 }
 
 
 /* 01-07 */
 .fukidashi-01-07 {
   position: relative;
+  width: fit-content;
   padding: 12px 16px;
   border: 2px solid #333333;
 }
 .fukidashi-01-07::after {
   content: "";
   position: absolute;
-  top: 60px;
+  top: calc(100% + 5px);
   left: 50%;
   width: 30px;
   height: 2px;
-  rotate: 50deg;
+  box-sizing: border-box;
   background-color: #333333;
-  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; /* 背景色と同じ色を指定 */
+  rotate: 50deg;
 }
 
 
 /* 01-08 */
 .fukidashi-01-08 {
   position: relative;
+  width: fit-content;
   padding: 12px 16px;
   border: 2px solid #333333;
   background-color: #ffffff;
@@ -235,20 +255,22 @@ h1 {
   z-index: -2;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
   border: 2px solid #333333;
   background-color: #ffffff;
 }
 .fukidashi-01-08::after {
   content: "";
   position: absolute;
-  top: 68px;
+  top: calc(100% + 10px);
   left: 50%;
   z-index: -1;
-  width: 30px;
+  width: 20px;
   height: 2px;
   transform: rotate(50deg);
+  box-sizing: border-box;
   background-color: #333333;
-  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; /* 背景色と同じ色を指定 */
 }
 
 
@@ -270,8 +292,9 @@ h1 {
   width: 26px;
   height: 2px;
   transform: rotate(50deg);
+  box-sizing: border-box;
   background-color: #333333;
-  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; /* 背景色と同じ色を指定 */
 }
 
 
@@ -293,18 +316,20 @@ h1 {
   width: 15px;
   height: 15px;
   transform: rotate(135deg);
-  background-color: #ffffff;
+  box-sizing: border-box;
+  background-color: #ffffff; /* 背景色と同じ色を指定 */
 }
 .fukidashi-01-10::after {
   content: "";
   position: absolute;
-  top: 106%;
+  top: calc(100% + 5px);
   left: 68px;
   width: 20px;
   height: 2px;
   transform: rotate(50deg);
+  box-sizing: border-box;
   background-color: #333333;
-  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; /* 背景色と同じ色を指定 */
 }
 
 
@@ -326,8 +351,9 @@ h1 {
   width: 26px;
   height: 2px;
   transform: rotate(50deg);
+  box-sizing: border-box;
   background-color: #333333;
-  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; /* 背景色と同じ色を指定 */
 }
 .fukidashi-01-11 > .text {
   position: absolute;
@@ -339,7 +365,7 @@ h1 {
   border-radius: 50%;
   background-color: #ffffff;
 }
-.fukidashi-01-11 > .span {
+.fukidashi-01-11 > .ornament {
   position: absolute;
   top: -30%;
   left: -25%;
@@ -353,7 +379,7 @@ h1 {
   border-radius: 50%;
   background-color: #ffffff;
 }
-.fukidashi-01-11 > .span::before {
+.fukidashi-01-11 > .ornament::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -361,33 +387,33 @@ h1 {
   width: 15px;
   height: 15px;
   transform: rotate(135deg);
+  box-sizing: border-box;
   background-color: #ffffff;
 }
 
 
 /* 01-12 */
 .fukidashi-01-12 {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding: 12px 16px;
 }
 .fukidashi-01-12::before {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: -20px;
   width: 30px;
   height: 2px;
   transform: rotate(60deg);
+  box-sizing: border-box;
   background-color: #333333;
 }
 .fukidashi-01-12::after {
   content: "";
-  position: absolute;
-  top: 50%;
-  right: -20px;
   width: 30px;
   height: 2px;
   transform: rotate(-60deg);
+  box-sizing: border-box;
   background-color: #333333;
 }
 
@@ -405,6 +431,7 @@ h1 {
   width: 100px;
   height: 1px;
   transform: rotate(-14deg);
+  box-sizing: border-box;
   background-color: #333333;
 }
 .fukidashi-01-13::after {
@@ -415,16 +442,17 @@ h1 {
   width: 120px;
   height: 1px;
   transform: rotate(14deg);
+  box-sizing: border-box;
   background-color: #333333;
 }
-.fukidashi-01-13 > .span {
+.fukidashi-01-13 > .ornament {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.fukidashi-01-13 > .span::before {
+.fukidashi-01-13 > .ornament::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -432,9 +460,10 @@ h1 {
   width: 160px;
   height: 1px;
   transform: rotate(-12deg);
+  box-sizing: border-box;
   background-color: #333333;
 }
-.fukidashi-01-13 > .span::after {
+.fukidashi-01-13 > .ornament::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -442,6 +471,7 @@ h1 {
   width: 160px;
   height: 1px;
   transform: rotate(12deg);
+  box-sizing: border-box;
   background-color: #333333;
 }
 
@@ -449,6 +479,7 @@ h1 {
 /* 02-01 */
 .fukidashi-02-01 {
   position: relative;
+  width: fit-content;
   padding: 12px 20px;
   color: #ffffff;
   border-radius: 10px;
@@ -463,6 +494,7 @@ h1 {
   width: 20px;
   height: 12px;
   transform: translateX(-50%);
+  box-sizing: border-box;
   background-color: #333333;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
@@ -498,6 +530,7 @@ h1 {
   width: 15px;
   height: 15px;
   transform: rotate(135deg);
+  box-sizing: border-box;
   background-color: #ffffff;
 }
 .fukidashi-02-03::after {
@@ -508,23 +541,25 @@ h1 {
   width: 20px;
   height: 2px;
   transform: rotate(50deg);
+  box-sizing: border-box;
   background-color: #333333;
 }
-.fukidashi-02-03 > .span {
+.fukidashi-02-03 > .ornament {
   position: absolute;
   width: 100%;
   height: 100%;
-  transform: translateX(3px) translateY(3px);
+  transform: translateX(3px) translateY(3px); /* 位置をややズラす */
   border-radius: 50%;
   background-color: hotpink;
   pointer-events: none; /* クリック不可にする（下のテキストに触れるように） */
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply; /* 乗算 */
 }
 
 
 /* 02-04 */
 .fukidashi-02-04 {
   position: relative;
+  width: fit-content;
 }
 .fukidashi-02-04 > .text {
   position: relative;
@@ -540,15 +575,16 @@ h1 {
   width: 15px;
   height: 15px;
   transform: rotate(135deg);
+  box-sizing: border-box;
   background-color: #fff3d1;
 }
-.fukidashi-02-04 > .span {
+.fukidashi-02-04 > .ornament {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
-.fukidashi-02-04 > .span::before {
+.fukidashi-02-04 > .ornament::before {
   content: "";
   position: absolute;
   top: 0;
@@ -556,17 +592,19 @@ h1 {
   width: 36px;
   height: 16px;
   transform: rotate(-45deg);
+  box-sizing: border-box;
   background-color: #ff57b1;
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply; /* 乗算 */
 }
-.fukidashi-02-04 > .span::after {
+.fukidashi-02-04 > .ornament::after {
   content: "";
   position: absolute;
-  top: 36px;
+  top: calc(100% - 15px);
   right: -10px;
   width: 36px;
   height: 16px;
   transform: rotate(-45deg);
+  box-sizing: border-box;
   background-color: #64d1ff;
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply; /* 乗算 */
 }
